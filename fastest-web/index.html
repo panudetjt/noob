@@ -16,15 +16,22 @@
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
 
-  <link rel="preload" href="css/normalize.css">
-  <link rel="preload" href="css/main.css">
+  <link rel="preload" href="css/normalize.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+      <link rel="stylesheet" href="css/normalize.css">
+  </noscript>
+  <link rel="preload" href="css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+      <link rel="stylesheet" href="css/main.css">
+  </noscript>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sarabun&display=swap">
 
   <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
 
-  <p>Hello world! This is fastest site</p>
+  <p>Hello world! This is fastest site ภาษาไทย</p>
 
   <script src="js/vendor/modernizr-3.11.2.min.js" defer></script>
   <script src="js/plugins.js" defer></script>
