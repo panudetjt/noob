@@ -170,6 +170,14 @@ textarea {
   clear: both;
 }
 
+/*
+  MAIN
+ */
+img {
+  max-width: 100%;
+  display: block;
+}
+
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
@@ -261,3 +269,4 @@ textarea {
     page-break-after: avoid;
   }
 }
+

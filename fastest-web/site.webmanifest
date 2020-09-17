@@ -1,11 +1,14 @@
 {
-  "short_name": "",
-  "name": "",
-  "icons": [{
-    "src": "icon.png",
-    "type": "image/png",
-    "sizes": "192x192"
-  }],
+  "short_name": "Fastest web",
+  "name": "Fastest web",
+  "icons": [
+    {
+      "src": "img/icon@512x512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
   "display": "minimal-ui",
   "start_url": "/?utm_source=homescreen",
   "background_color": "#fafafa",
