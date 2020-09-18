@@ -3,8 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "serve": "vue-cli-service serve --production",
+    "build": "vue-cli-service build --modern",
+    "build:report": "npm run build -- --report",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
@@ -28,8 +29,10 @@
     "eslint-plugin-prettier": "^3.1.3",
     "eslint-plugin-vue": "^7.0.0-0",
     "prettier": "^1.19.1",
+    "responsive-loader": "^2.1.1",
     "sass": "^1.26.5",
     "sass-loader": "^8.0.2",
+    "sharp": "^0.26.0",
     "typescript": "~3.9.3"
   }
 }
