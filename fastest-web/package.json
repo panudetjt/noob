@@ -9,27 +9,15 @@
   "license": "",
   "author": "",
   "scripts": {
-    "clean-build": "rm -rf dist .cache",
-    "build": "parcel build index.html",
-    "dev": "parcel index.html --open",
-    "start": "npm run clean-build && npm run build && npm run dev",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:dev": "webpack --mode=development",
+    "start:dev": "webpack-dev-server"
   },
   "devDependencies": {
-    "parcel-bundler": "^1.12.4",
-    "parcel-plugin-purgecss": "^3.0.0",
-    "parcel-plugin-static-files-copy": "^2.5.0",
-    "parcel-plugin-workbox": "^0.2.0"
+    "html-webpack-harddisk-plugin": "^1.0.2",
+    "html-webpack-plugin": "^4.4.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
   },
-  "dependencies": {},
-  "staticFiles": {
-    "staticPath": ["robots.txt", "humans.txt"]
-  },
-  "workbox": {
-    "importScripts": [
-      "./js/service-worker.js"
-    ],
-    "globDirectory": "./dist",
-    "globPatterns": "**/*.{css,html,gif,js,jpg,png,svg,webp}"
-  }
+  "dependencies": {}
 }
