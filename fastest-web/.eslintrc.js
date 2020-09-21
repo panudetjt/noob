@@ -1,20 +1,42 @@
 module.exports = {
-  root: true,
-  env: {
-    node: true
-  },
-  extends: [
-    "plugin:vue/vue3-essential",
-    "eslint:recommended",
-    "@vue/typescript/recommended",
-    "@vue/prettier",
-    "@vue/prettier/@typescript-eslint"
-  ],
-  parserOptions: {
-    ecmaVersion: 2020
-  },
-  rules: {
-    "no-console": process.env.NODE_ENV === "production" ? "warn" : "off",
-    "no-debugger": process.env.NODE_ENV === "production" ? "warn" : "off"
-  }
+    env: {
+        browser: true,
+        node: true
+    },
+    plugins: ["@typescript-eslint"],
+    extends: [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:@typescript-eslint/recommended-requiring-type-checking",
+        "plugin:react/recommended",
+        "plugin:react-hooks/recommended",
+        "plugin:prettier/recommended",
+        "prettier/@typescript-eslint",
+        "prettier/react"
+    ],
+    parser: "@typescript-eslint/parser",
+    parserOptions: {
+        ecmaFeatures: {
+            jsx: true
+        },
+        project: "./tsconfig.eslint.json",
+    },
+    rules: {
+        "react/no-unknown-property": ["error", { ignore: ["class"] }],
+    },
+    settings: {
+        react: {
+            pragma: "h",
+            version: "detect"
+        },
+    },
+    overrides: [
+        {
+            files: ["*.js"],
+            rules: {
+                "@typescript-eslint/explicit-function-return-type": "off",
+            }
+        }
+    ]
 };

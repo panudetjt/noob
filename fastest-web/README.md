@@ -1,26 +1,19 @@
 # fastest-web
 
-อะหรือ [https://inspiring-kepler-27a4d6.netlify.app/]()
+## CLI Commands
 
-## Project setup
-```
-yarn install
-```
+-   `npm install`: Installs dependencies
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+-   `npm run dev`: Run a development, HMR server
 
-### Compiles and minifies for production
-```
-yarn build
-```
+-   `npm run serve`: Run a production-like server
 
-### Lints and fixes files
-```
-yarn lint
-```
+-   `npm run build`: Production-ready build
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+-   `npm run lint`: Pass TypeScript files using TSLint
+
+-   `npm run test`: Run Jest and Enzyme with
+    [`enzyme-adapter-preact-pure`](https://github.com/preactjs/enzyme-adapter-preact-pure) for
+    your tests
+
+For detailed explanation on how things work, checkout the [CLI Readme](https://github.com/developit/preact-cli/blob/master/README.md).
